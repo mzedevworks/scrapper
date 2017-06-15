@@ -1,0 +1,4 @@
+{
+  "scrapper/tests.py::FunctionalTests::test_root": true,
+  "scrapper/tests.py::ViewTests::test_home": true
+}

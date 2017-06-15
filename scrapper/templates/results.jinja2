@@ -1,0 +1,15 @@
+{% extends "layout.jinja2" %}
+{% block content %}
+<div class="content">
+  </br></br>
+  <hr>
+  <div class="alert alert-success alert-dismissable">
+    <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    <strong>SUCCESS!</strong> You have successfully managed to scrape something and below is the table of contents
+    <a href="/"><strong>Restart Again</strong></a>
+  </div>
+  <div class="row">
+   {{ html | safe}}
+  </div>
+</div>
+{% endblock content %}
