@@ -38,3 +38,5 @@ environment wrapper but its not a requirement so will leave the details
 - It will ask you if you want to run tests or not
 
 - Press 1 to do the tests and 2 to continue
+
+- Now if you go to 127.0.0.1:6543 you can view the application
