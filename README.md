@@ -6,6 +6,7 @@ scrapper
 - This project will scrape a given wikipedia url to get the table of contents
 
 #Setting Up
+
 - First you will need to install pip assuming you are using Linux.
 
 - For other versions check from the pip documentation [link to pip installation   !](https://pip.pypa.io/en/stable/)
@@ -39,4 +40,5 @@ environment wrapper but its not a requirement so will leave the details
 
 - Press 1 to do the tests and 2 to continue
 
-- Now if you go to 127.0.0.1:6543 you can view the application
+- Now if you go to 127.0.0.1:6543 or your IP if you are running from a machine different from the one you are browsing
+ you can view the application

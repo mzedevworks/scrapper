@@ -3,7 +3,7 @@ import os
 from setuptools import setup, find_packages
 
 here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here, 'README.txt')) as f:
+with open(os.path.join(here, 'README.md')) as f:
     README = f.read()
 with open(os.path.join(here, 'CHANGES.txt')) as f:
     CHANGES = f.read()
@@ -30,7 +30,6 @@ requires = [
     'pytest-cov==2.5.1',
     'pytz==2017.2',
     'repoze.lru==0.6',
-    'scrapper==0.0',
     'six==1.10.0',
     'translationstring==1.3',
     'venusian==1.1.0',

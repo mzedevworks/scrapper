@@ -19,7 +19,7 @@ class Parser():
         :return:
         """
         try:
-            soup = BeautifulSoup(html)
+            soup = BeautifulSoup(html, 'html.parser')
             toc = soup.find("div", {"id": "toc"})
             return toc
         except:

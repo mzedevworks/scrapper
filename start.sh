@@ -1,7 +1,10 @@
+#!/bin/bash
 ROOT=$(pwd)
 echo $ROOT
-#create virtual environment variable
-VENV="$ROOT/env/"
+#create virtual environment
+VENV="$ROOT/env"
+echo "Creating a virtual environment in directory $VENV"
+virtualenv --python=python3.4 $VENV
 cd $ROOT
 echo "Activating virtual environment"
 source $VENV/bin/activate
