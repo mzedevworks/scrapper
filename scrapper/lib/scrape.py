@@ -15,7 +15,7 @@ class Scrape:
     def __init__(self, url):
         self.url = url
 
-    def __run(self):
+    def start(self):
         """
         Scrape the appropriate source and return the html.
 
@@ -32,6 +32,3 @@ class Scrape:
             return table_of_contents_html
         except:
             return {"error": "Error while scrapping html enter another url"}
-
-    def start(self):
-        self.__run()

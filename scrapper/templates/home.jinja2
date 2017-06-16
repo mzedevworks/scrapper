@@ -2,26 +2,30 @@
 
 {% block content %}
 <div class="content">
-  <h1><span class="font-semi-bold">Want to be ready for your future? All you need is practice.</span></h1>
-  </br></br>
-  <p class="lead">How ironic that a site called Siyavula is only being offered in English. My first project will be to
-      translate it to Xhosa and Afrikaans</p></br>
-
-  <p class="lead">Enter a valid wiki url in the form below and we will scrap it for you</p>
+  <h1><span class="font-semi-bold">{%trans%}Want to be ready for your future? All you need is practice.
+      {%endtrans%}</span></h1>
+  </br>
+  <p class="lead">{%trans%} Enter a valid wiki url in the form below and we will scrap it for you {%endtrans%}</p>
   <hr>
   {% if error %}
       <div class="alert alert-danger alert-dismissable">
         <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-        <strong>Error!</strong> {{ error }}
+        <strong>{%trans%}Error!{%endtrans%}</strong> {{ error }}
       </div>
   {% endif %}
   <form method="POST" action="/" data-toggle="validator" role="form">
       <div class="input-group has-feedback">
           <input type="text" name="url" class="form-control" placeholder="Search&hellip;" required>
           <span class="input-group-btn">
-              <button type="submit" class="btn btn-default">Go</button>
+              <button type="submit" class="btn btn-default">{%trans%}Go{%endtrans%}</button>
           </span>
       </div>
   </form>
+  </br></br>
+  <p class="lead">{%trans%}How ironic that a site called Siyavula is only being offered in English.
+      With this decolonisation of education mantra and all it will be a great move to translate the site into some
+      local languages Zulu, Xhosa and Afrikaans to lure everyone. This will be my first project{%endtrans%}</p></br>
+
+
 </div>
 {% endblock content %}

@@ -1,3 +1,13 @@
+"""
+#   author - Musavengana Zirebwa
+#   email - musaz01@gmail.com
+#   created - 2017/06/14 9:53 PM
+#   version - 1.0.0
+#   project - siyavula
+
+:description:
+This is the class used to scrape a given wikipedia url
+"""
 from scrapper.lib.scrapes_agents.scrape_loader import Loader
 from scrapper.lib.scrapes_agents.scrape_parser import Parser
 
@@ -22,7 +32,6 @@ class ScrapeFactory(object):
         :param source:
         :return:
         """
-
         return Parser()
 
 

@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="pyramid web application">
     <meta name="author" content="Pylons Project">
-    <link rel="shortcut icon" href="{{request.static_url('scrapper:static/pyramid-16x16.png')}}">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Siyavula</title>
 
@@ -37,20 +36,20 @@ background-image: url(https://www.siyavula.com/static/themes/emas/files/styles/6
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="/">Home</a>
+                  <a class="navbar-brand" href="/">{%trans%}Home{%endtrans%}</a>
                 </div>
                 <div class="navbar-header">
-                  <a class="navbar-brand" href="https://www.siyavula.com/">Siyavula</a>
+                  <a class="navbar-brand" href="https://www.siyavula.com/">{%trans%}Siyavula{%endtrans%}</a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                         aria-expanded="false">Select Language <span class="caret"></span></a>
+                         aria-expanded="false">{%trans%}Select Language{%endtrans%}<span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="/en">English</a></li>
-                        <li><a href="/de">Xhosa</a></li>
-                        <li><a href="/ru">Afrikaans</a></li>
+                        <li><a href="/">{%trans%}English{%endtrans%}</a></li>
+                        <li><a href="/">{%trans%}Xhosa{%endtrans%}</a></li>
+                        <li><a href="/">{%trans%}Afrikaans{%endtrans%}</a></li>
                       </ul>
                     </li>
                   </ul>
