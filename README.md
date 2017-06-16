@@ -1,11 +1,11 @@
 scrapper
 ========
 
-#What it does
+# What it does
 ---------------
 - This project will scrape a given wikipedia url to get the table of contents
 
-#Setting Up
+**Setting Up**
 
 - First you will need to install pip assuming you are using Linux.
 
@@ -20,7 +20,7 @@ environment wrapper but its not a requirement so will leave the details
 
    $sudo pip install --upgrade virtualenv
 
-##Starting the application
+**Starting the application**
 
 - Clone the project onto your local machine.
 
